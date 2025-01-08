@@ -1,5 +1,5 @@
 .TodoCounter {
-    font-size: 40px;
+    font-size: 3vw;
     text-align: center;
     margin: 0;
     padding: 48px;
@@ -10,4 +10,13 @@
 .TodoCounter span {
     font-weight: bold;
     color: rgb(162, 5, 141);
+}
+
+@media (max-width:700px) {
+  .TodoCounter {
+    font-size: 7vw;
+    padding: 10px;
+
+  }
+  
 }

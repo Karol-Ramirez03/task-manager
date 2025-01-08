@@ -8,6 +8,7 @@ import { TodosError } from '../TodosError';
 import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext';
 import { TodoForm } from '../TodoForm';
+import { TodoNew } from '../TodoNew/TodoNew';
 import React from 'react';
 
 function AppUI() {
@@ -31,7 +32,7 @@ function AppUI() {
           <TodoList>
             {loading && <TodosLoading/>}
             {error && <TodosError/>}
-            {(!loading && searchedTodos.length === 0 ) && <p>Crea tu primer Todo</p>}
+            {(!loading && searchedTodos.length === 0 ) && <TodoNew/>}
             {searchedTodos.map((todo) => (
               <TodoItem 
               onDelete={() => deleteTodos(todo.text)} 

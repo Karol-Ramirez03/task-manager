@@ -4,7 +4,7 @@ import "./TodosLoading.css"
 function TodosLoading(){
   
   return (
-     <p>Cargando...</p>
+     <p className="todoLoading">Cargando...</p>
   );
 }
 
